@@ -1,0 +1,6 @@
+framework module OVLocationTagger {
+  umbrella header "OVLocationTagger-umbrella.h"
+
+  export *
+  module * { export * }
+}

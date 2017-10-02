@@ -11,5 +11,6 @@ s.author           = { 'Onur Var' => 'var.onur@hotmail.com' }
 s.source           = { :git => 'https://github.com/OnurVar/OVLocationTagger.git', :tag => s.version.to_s }
 s.ios.deployment_target = '8.0'
 s.source_files = 'OVLocationTagger/Classes/**/*'
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 end
 

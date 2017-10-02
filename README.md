@@ -1,6 +1,6 @@
 ![OVLocationTagger](https://github.com/OnurVar/OVLocationTagger/blob/master/Resources/logo.png?raw=true)
 
-[![Build Status](https://travis-ci.org/OnurVar/OVLocationTagger.svg?branch=master)](https://travis-ci.org/OnurVar/OVReachability)
+[![Build Status](https://travis-ci.org/OnurVar/OVLocationTagger.svg?branch=master)](https://travis-ci.org/OnurVar/OVLocationTagger)
 
 Simple Location Tagger returns last known User's location. 
 

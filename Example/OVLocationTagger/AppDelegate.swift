@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Register Location Tagger
         OVLocationTagger.sharedInstance.desiredAccuracy = kCLLocationAccuracyBest
         OVLocationTagger.sharedInstance.authType = .authorizedAlways
-        OVLocationTagger.sharedInstance.setTimerInterval(3.0)
+        OVLocationTagger.sharedInstance.timerInterval = 10.0
         OVLocationTagger.sharedInstance.register { (location) in
             let stringTest = String.init(format: "%f - %f", (location?.coordinate.latitude)!, (location?.coordinate.longitude)!)
             print(stringTest)

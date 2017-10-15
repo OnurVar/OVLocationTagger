@@ -13,24 +13,25 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     
     
     //Public's
-    @objc public static let sharedInstance =  OVLocationTagger()
-    @objc public let locationManager =               CLLocationManager()
-    @objc public var desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-    @objc public var authType = CLAuthorizationStatus.authorizedWhenInUse
-    
+    @objc public static let sharedInstance  = OVLocationTagger()
+    @objc public let locationManager        = CLLocationManager()
+    @objc public var desiredAccuracy        = kCLLocationAccuracyNearestTenMeters
+    @objc public var authType               = CLAuthorizationStatus.authorizedWhenInUse
+    @objc public var isLocationEnabled      = false
+    @objc public var timerInterval          = Double(15.0)
     
     //Private's
     fileprivate var completion:         OVLocationTaggerCompletion!
     fileprivate var lastKnownLocation:  CLLocation!
     fileprivate var timerTagger:        Timer!
-    fileprivate var timerInterval       = Double(15.0)
+    
     
 
     
     @objc public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
         self.completion = completion
         if CLLocationManager.locationServicesEnabled() {
-            if authType == .authorizedWhenInUse {
+            if authType == .authorizedAlways {
                 locationManager.requestAlwaysAuthorization()
             }else{
                 locationManager.requestWhenInUseAuthorization()
@@ -38,12 +39,13 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
             locationManager.delegate = self
             locationManager.desiredAccuracy = desiredAccuracy
         }
+        
+        checkStatus()
+        
     }
+
     
-    @objc public func setTimerInterval(_ timerInterval: Double){
-        self.timerInterval = Double(timerInterval)
-    }
-    
+    //MARK: Trigger
     @objc public func startTagger(){
         
         //First make sure you stop everything
@@ -53,7 +55,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||  CLLocationManager.authorizationStatus() == .authorizedAlways {
 
             //Start the timer if we have location service enabled
-            timerTagger = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(self.didTrigger(_:)), userInfo: nil, repeats: true)
+            timerTagger = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(self.didTriggerTimer(_:)), userInfo: nil, repeats: true)
             
             locationManager.startUpdatingLocation()
         }
@@ -71,10 +73,16 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         locationManager.stopUpdatingLocation()
     }
     
-    @objc func didTrigger(_ timer: Timer){
+    @objc fileprivate func didTriggerTimer(_ timer: Timer){
         completion(lastKnownLocation)
     }
     
+    fileprivate func checkStatus(){
+        let status = CLLocationManager.authorizationStatus()
+        if status == .authorizedAlways || status == .authorizedWhenInUse {
+            self.isLocationEnabled = true;
+        }
+    }
     
 }
 
@@ -85,5 +93,9 @@ extension OVLocationTagger : CLLocationManagerDelegate {
                 self.lastKnownLocation = last
             }
         }
+    }
+    
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        checkStatus()
     }
 }

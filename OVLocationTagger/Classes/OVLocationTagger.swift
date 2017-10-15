@@ -9,19 +9,25 @@
 import CoreLocation
 
 public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
-public class OVLocationTagger: NSObject {
+@objc public class OVLocationTagger: NSObject {
     
-    public static let sharedInstance =  OVLocationTagger()
-    let locationManager =               CLLocationManager()
+    
+    //Public's
+    @objc public static let sharedInstance =  OVLocationTagger()
+    @objc public let locationManager =               CLLocationManager()
+    @objc public var desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+    @objc public var authType = CLAuthorizationStatus.authorizedWhenInUse
+    
+    
+    //Private's
     fileprivate var completion:         OVLocationTaggerCompletion!
     fileprivate var lastKnownLocation:  CLLocation!
     fileprivate var timerTagger:        Timer!
     fileprivate var timerInterval       = Double(15.0)
     
-    public var desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-    public var authType = CLAuthorizationStatus.authorizedWhenInUse
+
     
-    public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
+    @objc public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
         self.completion = completion
         if CLLocationManager.locationServicesEnabled() {
             if authType == .authorizedWhenInUse {
@@ -34,11 +40,11 @@ public class OVLocationTagger: NSObject {
         }
     }
     
-    public func setTimerInterval(_ timerInterval: Double){
+    @objc public func setTimerInterval(_ timerInterval: Double){
         self.timerInterval = Double(timerInterval)
     }
     
-    public func startTagger(){
+    @objc public func startTagger(){
         
         //First make sure you stop everything
         stopTagger()
@@ -53,7 +59,7 @@ public class OVLocationTagger: NSObject {
         }
     }
     
-    public func stopTagger(){
+    @objc public func stopTagger(){
         
         //First make sure you stop Timer
         if timerTagger != nil {

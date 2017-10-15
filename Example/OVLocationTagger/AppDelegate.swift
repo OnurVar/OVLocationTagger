@@ -8,6 +8,7 @@
 
 import UIKit
 import OVLocationTagger
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Register Location Tagger
+        OVLocationTagger.sharedInstance.desiredAccuracy = kCLLocationAccuracyBest
+        OVLocationTagger.sharedInstance.authType = .authorizedAlways
         OVLocationTagger.sharedInstance.setTimerInterval(3.0)
         OVLocationTagger.sharedInstance.register { (location) in
             let stringTest = String.init(format: "%f - %f", (location?.coordinate.latitude)!, (location?.coordinate.longitude)!)

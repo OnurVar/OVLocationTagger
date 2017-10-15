@@ -18,12 +18,19 @@ public class OVLocationTagger: NSObject {
     fileprivate var timerTagger:        Timer!
     fileprivate var timerInterval       = Double(15.0)
     
+    public var desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+    public var authType = CLAuthorizationStatus.authorizedWhenInUse
+    
     public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
         self.completion = completion
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.requestWhenInUseAuthorization()
+            if authType == .authorizedWhenInUse {
+                locationManager.requestAlwaysAuthorization()
+            }else{
+                locationManager.requestWhenInUseAuthorization()
+            }
             locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.desiredAccuracy = desiredAccuracy
         }
     }
     
@@ -37,7 +44,7 @@ public class OVLocationTagger: NSObject {
         stopTagger()
     
         //Then start the location
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||  CLLocationManager.authorizationStatus() == .authorizedAlways {
 
             //Start the timer if we have location service enabled
             timerTagger = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(self.didTrigger(_:)), userInfo: nil, repeats: true)
@@ -58,7 +65,7 @@ public class OVLocationTagger: NSObject {
         locationManager.stopUpdatingLocation()
     }
     
-    func didTrigger(_ timer: Timer){
+    @objc func didTrigger(_ timer: Timer){
         completion(lastKnownLocation)
     }
     

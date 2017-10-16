@@ -26,7 +26,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     fileprivate var timerTagger:        Timer!
     
     
-
+    
     
     @objc public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
         self.completion = completion
@@ -43,34 +43,41 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         checkStatus()
         
     }
-
+    
     
     //MARK: Trigger
     @objc public func startTagger(){
         
-        //First make sure you stop everything
-        stopTagger()
-    
-        //Then start the location
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||  CLLocationManager.authorizationStatus() == .authorizedAlways {
-
-            //Start the timer if we have location service enabled
-            timerTagger = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(self.didTriggerTimer(_:)), userInfo: nil, repeats: true)
+        //Get the main thread
+        DispatchQueue.main.async {
             
-            locationManager.startUpdatingLocation()
+            //First make sure you stop everything
+            self.stopTagger()
+            
+            //Then start the location
+            if CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||  CLLocationManager.authorizationStatus() == .authorizedAlways {
+                
+                //Start the timer if we have location service enabled
+                self.timerTagger = Timer.scheduledTimer(timeInterval: self.timerInterval, target: self, selector: #selector(self.didTriggerTimer(_:)), userInfo: nil, repeats: true)
+                
+                self.locationManager.startUpdatingLocation()
+            }
         }
     }
     
     @objc public func stopTagger(){
-        
-        //First make sure you stop Timer
-        if timerTagger != nil {
-            timerTagger.invalidate()
-            timerTagger = nil
+        //Get the main thread
+        DispatchQueue.main.async {
+            
+            //First make sure you stop Timer
+            if self.timerTagger != nil {
+                self.timerTagger.invalidate()
+                self.timerTagger = nil
+            }
+            
+            //Then stop location updates
+            self.locationManager.stopUpdatingLocation()
         }
-        
-        //Then stop location updates
-        locationManager.stopUpdatingLocation()
     }
     
     @objc fileprivate func didTriggerTimer(_ timer: Timer){
@@ -99,3 +106,4 @@ extension OVLocationTagger : CLLocationManagerDelegate {
         checkStatus()
     }
 }
+

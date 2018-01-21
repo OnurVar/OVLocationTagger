@@ -26,8 +26,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     fileprivate var timerTagger:        Timer!
     
     
-    
-    
+    //MARK: Main Method
     @objc public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
         self.completion = completion
         if CLLocationManager.locationServicesEnabled() {
@@ -48,12 +47,13 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     //MARK: Trigger
     @objc public func startTagger(){
         
+        //First make sure you stop everything
+        self.stopTagger()
+        
+        
         //Get the main thread
         DispatchQueue.main.async {
-            
-            //First make sure you stop everything
-            self.stopTagger()
-            
+               
             //Then start the location
             if CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||  CLLocationManager.authorizationStatus() == .authorizedAlways {
                 

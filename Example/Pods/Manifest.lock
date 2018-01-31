@@ -1,5 +1,5 @@
 PODS:
-  - OVLocationTagger (1.2.1)
+  - OVLocationTagger (1.3.0)
 
 DEPENDENCIES:
   - OVLocationTagger (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  OVLocationTagger: c53e771bfb4fde13036cfa88d9c6042a450e569e
+  OVLocationTagger: cfea7fb5f6b9d16b6dcbcc86c2fa9e61cc18eaf2
 
 PODFILE CHECKSUM: c789f47cdfb94805c51c9f2d8e99abea9bf11035
 

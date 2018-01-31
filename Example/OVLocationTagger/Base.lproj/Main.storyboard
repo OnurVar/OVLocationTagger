@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,15 +41,28 @@
                                     <action selector="btnStopTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hJb-Uj-CrZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRr-m8-HlC">
+                                <rect key="frame" x="4" y="487" width="367" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jLA-ex-SEA"/>
+                                </constraints>
+                                <state key="normal" title="Trigger"/>
+                                <connections>
+                                    <action selector="btnTriggerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mRS-5J-XyN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GuR-Wl-Yeg" secondAttribute="trailing" constant="20" id="5xE-QY-NUo"/>
+                            <constraint firstItem="lRr-m8-HlC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="4" id="6mi-At-tMH"/>
                             <constraint firstItem="Dkx-Na-V82" firstAttribute="top" secondItem="GuR-Wl-Yeg" secondAttribute="bottom" constant="20" id="97H-SC-oYw"/>
                             <constraint firstItem="Dkx-Na-V82" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="JNK-Yq-F8z"/>
                             <constraint firstAttribute="trailing" secondItem="Dkx-Na-V82" secondAttribute="trailing" constant="20" id="JgL-jp-VMw"/>
                             <constraint firstItem="GuR-Wl-Yeg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="QPT-cc-kjB"/>
+                            <constraint firstAttribute="trailing" secondItem="lRr-m8-HlC" secondAttribute="trailing" constant="4" id="aCE-bX-uhK"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Dkx-Na-V82" secondAttribute="bottom" constant="20" id="d6W-CR-gkb"/>
+                            <constraint firstItem="GuR-Wl-Yeg" firstAttribute="top" secondItem="lRr-m8-HlC" secondAttribute="bottom" constant="20" id="zbN-hE-C8Q"/>
                         </constraints>
                     </view>
                 </viewController>

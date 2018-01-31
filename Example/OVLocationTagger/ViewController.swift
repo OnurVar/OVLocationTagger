@@ -30,5 +30,10 @@ class ViewController: UIViewController {
         OVLocationTagger.sharedInstance.startTagger()
     }
     
+    @IBAction func btnTriggerTapped(_ sender: Any) {
+        OVLocationTagger.sharedInstance.triggerTagger()
+    }
+    
+    
 }
 

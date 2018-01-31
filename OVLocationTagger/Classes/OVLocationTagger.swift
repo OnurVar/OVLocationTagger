@@ -26,8 +26,9 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     fileprivate var timerTagger:        Timer!
     
     
-    //MARK: Main Method
+    //MARK: Public
     @objc public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
+        NSLog("OVLocationTagger Registered (%@)", (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String))
         self.completion = completion
         if CLLocationManager.locationServicesEnabled() {
             if authType == .authorizedAlways {
@@ -43,9 +44,8 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         
     }
     
-    
-    //MARK: Trigger
     @objc public func startTagger(){
+        NSLog("OVLocationTagger Started")
         
         //First make sure you stop everything
         self.stopTagger()
@@ -66,6 +66,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     }
     
     @objc public func stopTagger(){
+        NSLog("OVLocationTagger Stopped")
         //Get the main thread
         DispatchQueue.main.async {
             
@@ -80,7 +81,14 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         }
     }
     
-    @objc fileprivate func didTriggerTimer(_ timer: Timer){
+    @objc public func triggerTagger(){
+        NSLog("OVLocationTagger Triggered")
+        notifyCompletion()
+    }
+
+    
+    //MARK: Private
+    fileprivate func notifyCompletion(){
         completion(lastKnownLocation)
     }
     
@@ -91,6 +99,13 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         }
     }
     
+    
+    //MARK: Trigger
+    @objc fileprivate func didTriggerTimer(_ timer: Timer){
+        notifyCompletion()
+    }
+    
+
 }
 
 extension OVLocationTagger : CLLocationManagerDelegate {

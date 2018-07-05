@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		62583C341F93C783001877F1 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62583C331F93C783001877F1 /* ExampleViewController.m */; };
+		628BEF4720EEB0160093AA5D /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 628BEF4620EEB0160093AA5D /* .swift-version */; };
 		D8D47358CA761501292B25AF /* Pods_OVLocationTagger_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFE5A8D7F8C8135849492D9 /* Pods_OVLocationTagger_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		62583C311F93C783001877F1 /* OVLocationTagger_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		62583C321F93C783001877F1 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 		62583C331F93C783001877F1 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		628BEF4620EEB0160093AA5D /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ".swift-version"; path = "../.swift-version"; sourceTree = "<group>"; };
 		80786DA00C6F7F4E9E93CD22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9D462CD1B687D02C2A48E3F4 /* Pods_OVLocationTagger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OVLocationTagger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E548B4236770BF489FC61D20 /* Pods-OVLocationTagger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OVLocationTagger_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				628BEF4620EEB0160093AA5D /* .swift-version */,
 				5A8843C7579B92DE322F7EC1 /* OVLocationTagger.podspec */,
 				80786DA00C6F7F4E9E93CD22 /* README.md */,
 				EC5DAE4FA9B3E0AAC345192F /* LICENSE */,
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628BEF4720EEB0160093AA5D /* .swift-version in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

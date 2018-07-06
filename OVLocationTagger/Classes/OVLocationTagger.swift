@@ -45,12 +45,11 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     }
     
     @objc public func startTagger(){
-        NSLog("OVLocationTagger Started")
         
         //First make sure you stop everything
         self.stopTagger()
         
-        
+        NSLog("OVLocationTagger Started")
         //Get the main thread
         DispatchQueue.main.async {
                
@@ -67,6 +66,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     
     @objc public func stopTagger(){
         NSLog("OVLocationTagger Stopped")
+        
         //Get the main thread
         DispatchQueue.main.async {
             

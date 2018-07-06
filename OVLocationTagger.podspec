@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'OVLocationTagger'
-s.version          = '1.3.5'
+s.version          = '1.3.6'
 s.summary          = 'Simple Location Tagger'
 s.description      = <<-DESC
 Simple Location Tagger returns last known User's location.

@@ -1,6 +1,6 @@
 {
   "name": "OVLocationTagger",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "summary": "Simple Location Tagger",
   "description": "Simple Location Tagger returns last known User's location.",
   "homepage": "https://github.com/OnurVar/OVLocationTagger.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/OnurVar/OVLocationTagger.git",
-    "tag": "1.3.5"
+    "tag": "1.3.6"
   },
   "platforms": {
     "ios": "8.0"

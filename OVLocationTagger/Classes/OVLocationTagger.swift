@@ -28,7 +28,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     
     //MARK: Public
     @objc public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
-        NSLog("OVLocationTagger Registered (%@)", (Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String))
+        NSLog("[OVLocationTagger] Registered (1.3.4)")
         self.completion = completion
         if CLLocationManager.locationServicesEnabled() {
             if authType == .authorizedAlways {
@@ -49,7 +49,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         //First make sure you stop everything
         self.stopTagger()
         
-        NSLog("OVLocationTagger Started")
+        NSLog("[OVLocationTagger] Started")
         //Get the main thread
         DispatchQueue.main.async {
                
@@ -65,7 +65,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     }
     
     @objc public func stopTagger(){
-        NSLog("OVLocationTagger Stopped")
+        NSLog("[OVLocationTagger] Stopped")
         
         //Get the main thread
         DispatchQueue.main.async {
@@ -82,7 +82,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     }
     
     @objc public func triggerTagger(){
-        NSLog("OVLocationTagger Triggered")
+        NSLog("[OVLocationTagger] Triggered")
         notifyCompletion()
     }
 

@@ -18,10 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E324B1A3E8D9F48C5D4351F /* Pods-OVLocationTagger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OVLocationTagger_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OVLocationTagger_Tests/Pods-OVLocationTagger_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3E1BB1C6636AEF6FD5250F27 /* Pods-OVLocationTagger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OVLocationTagger_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4FFE5A8D7F8C8135849492D9 /* Pods_OVLocationTagger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OVLocationTagger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A8843C7579B92DE322F7EC1 /* OVLocationTagger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OVLocationTagger.podspec; path = ../OVLocationTagger.podspec; sourceTree = "<group>"; };
+		5A8843C7579B92DE322F7EC1 /* OVLocationTagger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OVLocationTagger.podspec; path = ../OVLocationTagger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* OVLocationTagger_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OVLocationTagger_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,17 +28,13 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62583C311F93C783001877F1 /* OVLocationTagger_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		62583C321F93C783001877F1 /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 		62583C331F93C783001877F1 /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
 		628BEF4620EEB0160093AA5D /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ".swift-version"; path = "../.swift-version"; sourceTree = "<group>"; };
 		80786DA00C6F7F4E9E93CD22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9D462CD1B687D02C2A48E3F4 /* Pods_OVLocationTagger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OVLocationTagger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E548B4236770BF489FC61D20 /* Pods-OVLocationTagger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OVLocationTagger_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EC5DAE4FA9B3E0AAC345192F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EF392DF75BEE4B7F11037E5A /* Pods-OVLocationTagger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OVLocationTagger_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OVLocationTagger_Tests/Pods-OVLocationTagger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +54,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for OVLocationTagger */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				ACF0150FE209F422822E1B74 /* Pods */,
 				961B55FEC6E28F7BF8F61581 /* Frameworks */,
@@ -99,23 +93,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				4FFE5A8D7F8C8135849492D9 /* Pods_OVLocationTagger_Example.framework */,
-				9D462CD1B687D02C2A48E3F4 /* Pods_OVLocationTagger_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,8 +117,6 @@
 			children = (
 				3E1BB1C6636AEF6FD5250F27 /* Pods-OVLocationTagger_Example.debug.xcconfig */,
 				E548B4236770BF489FC61D20 /* Pods-OVLocationTagger_Example.release.xcconfig */,
-				EF392DF75BEE4B7F11037E5A /* Pods-OVLocationTagger_Tests.debug.xcconfig */,
-				1E324B1A3E8D9F48C5D4351F /* Pods-OVLocationTagger_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -159,7 +133,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				8D7535676B386D72E5BD6C44 /* [CP] Embed Pods Frameworks */,
-				A4CD53B4EFFAC131973A106F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,21 +226,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4CD53B4EFFAC131973A106F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

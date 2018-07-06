@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02B6389D0E318911E6EB1C8AD8B855E8 /* OVLocationTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9962EE829205A52D6B2C3C99B0E0A05E /* OVLocationTagger.swift */; };
-		40B0B8F1D578D5B6C63517C1B37141D0 /* OVLocationTagger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB740E4FF51CD7FF2AF8B3DDF8D3E202 /* OVLocationTagger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02B6389D0E318911E6EB1C8AD8B855E8 /* OVLocationTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267A5ABB05D04659A98A1FAD5379A64 /* OVLocationTagger.swift */; };
+		40B0B8F1D578D5B6C63517C1B37141D0 /* OVLocationTagger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA15B44A39C1EE8B1F75C6802DB9DE27 /* OVLocationTagger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BC69A2BD9C9B3CBB88DBA01B0C0D85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DD291EFDE5EAD32F2C55DBDFE26D6B5A /* OVLocationTagger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AEB3A1E109795D1F10B0D07174EB39 /* OVLocationTagger-dummy.m */; };
+		DD291EFDE5EAD32F2C55DBDFE26D6B5A /* OVLocationTagger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5C99386E6FE69E5C35737200A8327 /* OVLocationTagger-dummy.m */; };
 		E6397540AB2FC0E02C1645BE9F809508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		EE238AFC44190453D093CF8504154060 /* Pods-OVLocationTagger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8DB55D3F9842931BEB7C4855CAF84E7 /* Pods-OVLocationTagger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDCBB034864ADE364EEBD66968EDA96B /* Pods-OVLocationTagger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2A3B02FA5798E79D0FA531B5005D1 /* Pods-OVLocationTagger_Example-dummy.m */; };
+		EE238AFC44190453D093CF8504154060 /* Pods-OVLocationTagger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 096ECCF4168C9551C517C3268024618F /* Pods-OVLocationTagger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDCBB034864ADE364EEBD66968EDA96B /* Pods-OVLocationTagger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 184530CDD8B486661543284345522B25 /* Pods-OVLocationTagger_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,27 +27,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		069B877796AA29B7500A70612EFD753A /* OVLocationTagger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OVLocationTagger.xcconfig; sourceTree = "<group>"; };
-		075A2D4270290B255D8BC5834BD5314C /* Pods-OVLocationTagger_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OVLocationTagger_Example-resources.sh"; sourceTree = "<group>"; };
-		160905711CF9EE8F4ED60E6B8B86CAD8 /* Pods-OVLocationTagger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OVLocationTagger_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		17AEB3A1E109795D1F10B0D07174EB39 /* OVLocationTagger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OVLocationTagger-dummy.m"; sourceTree = "<group>"; };
-		24D2A3B02FA5798E79D0FA531B5005D1 /* Pods-OVLocationTagger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OVLocationTagger_Example-dummy.m"; sourceTree = "<group>"; };
-		3444C768E925F4834FF6EEBB413633F1 /* Pods-OVLocationTagger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OVLocationTagger_Example.release.xcconfig"; sourceTree = "<group>"; };
-		564B51851266B1D74D6A00BF900521EF /* OVLocationTagger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger-prefix.pch"; sourceTree = "<group>"; };
+		095B863712B4C513A453F9C682AF1F0A /* Pods-OVLocationTagger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OVLocationTagger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		096ECCF4168C9551C517C3268024618F /* Pods-OVLocationTagger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OVLocationTagger_Example-umbrella.h"; sourceTree = "<group>"; };
+		13598202AC74C385730DE65DB4431F94 /* Pods-OVLocationTagger_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OVLocationTagger_Example-resources.sh"; sourceTree = "<group>"; };
+		184530CDD8B486661543284345522B25 /* Pods-OVLocationTagger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OVLocationTagger_Example-dummy.m"; sourceTree = "<group>"; };
+		2032E894A632E8EB9906737139E29AAA /* OVLocationTagger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OVLocationTagger.xcconfig; sourceTree = "<group>"; };
+		24931DB655D6A5D521981281535465C8 /* Pods-OVLocationTagger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OVLocationTagger_Example.modulemap"; sourceTree = "<group>"; };
+		24DCBA2EF603A24C22783CFF8FD6ADD5 /* Pods-OVLocationTagger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OVLocationTagger_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3267A5ABB05D04659A98A1FAD5379A64 /* OVLocationTagger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OVLocationTagger.swift; path = OVLocationTagger/Classes/OVLocationTagger.swift; sourceTree = "<group>"; };
+		4BFAC2A4242DAFFBC420787199375757 /* OVLocationTagger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = OVLocationTagger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E85BDB8D913210A06D2FF032D18EDE0 /* Pods-OVLocationTagger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OVLocationTagger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5DEDEC998967023ABB2B0CF8570542BC /* Pods-OVLocationTagger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OVLocationTagger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E072DA5B4B4D44600A57556B1D676F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		61CFAFE61B526963DBBF497AFC5ACCF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648590DA043E4CB164F71E85C7E9A78A /* Pods-OVLocationTagger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OVLocationTagger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67347AFC17624A466B638A3FF99E0DDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B2A24A5D17B1BDC6D81754246188C05 /* OVLocationTagger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OVLocationTagger.modulemap; sourceTree = "<group>"; };
-		6BA02768A0ABE15BDCB1723EECC8CF94 /* OVLocationTagger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OVLocationTagger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FD511B21B5EDC64692821080A8B982C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9962EE829205A52D6B2C3C99B0E0A05E /* OVLocationTagger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OVLocationTagger.swift; path = OVLocationTagger/Classes/OVLocationTagger.swift; sourceTree = "<group>"; };
-		A7BCB910DA5CFDE236CA3ECFF3E89C90 /* Pods_OVLocationTagger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OVLocationTagger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1F881E523A51407A2F7917D0F9DBD41 /* Pods-OVLocationTagger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OVLocationTagger_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C8DB55D3F9842931BEB7C4855CAF84E7 /* Pods-OVLocationTagger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OVLocationTagger_Example-umbrella.h"; sourceTree = "<group>"; };
-		DE510573C8B2FF6193564F596E482C8D /* Pods-OVLocationTagger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OVLocationTagger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EB740E4FF51CD7FF2AF8B3DDF8D3E202 /* OVLocationTagger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger-umbrella.h"; sourceTree = "<group>"; };
-		EB8254CAEF57A26FBA9765A12932A211 /* Pods-OVLocationTagger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OVLocationTagger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F28F1A31C5E6F3F8899D7CABBCD29661 /* Pods-OVLocationTagger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OVLocationTagger_Example.modulemap"; sourceTree = "<group>"; };
+		6BA02768A0ABE15BDCB1723EECC8CF94 /* OVLocationTagger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OVLocationTagger.framework; path = OVLocationTagger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EAA79584A51FAB0D15F5636E67DB8F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A6C5C99386E6FE69E5C35737200A8327 /* OVLocationTagger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OVLocationTagger-dummy.m"; sourceTree = "<group>"; };
+		A7BCB910DA5CFDE236CA3ECFF3E89C90 /* Pods_OVLocationTagger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OVLocationTagger_Example.framework; path = "Pods-OVLocationTagger_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA15B44A39C1EE8B1F75C6802DB9DE27 /* OVLocationTagger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger-umbrella.h"; sourceTree = "<group>"; };
+		CAE2207660D62471C1AE6EC7EC228364 /* OVLocationTagger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger-prefix.pch"; sourceTree = "<group>"; };
+		EFFC6790E0547F427AD7473A0EAE46B7 /* OVLocationTagger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OVLocationTagger.modulemap; sourceTree = "<group>"; };
+		F1937E58EBC4DBA9B6FF81714C78A993 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,36 +73,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CC31082F4C651D0A1D5E993447D3C1C /* Pods-OVLocationTagger_Example */ = {
+		22FF42687D91DCC73F9191E3F53874E0 /* Pods-OVLocationTagger_Example */ = {
 			isa = PBXGroup;
 			children = (
-				67347AFC17624A466B638A3FF99E0DDE /* Info.plist */,
-				F28F1A31C5E6F3F8899D7CABBCD29661 /* Pods-OVLocationTagger_Example.modulemap */,
-				DE510573C8B2FF6193564F596E482C8D /* Pods-OVLocationTagger_Example-acknowledgements.markdown */,
-				EB8254CAEF57A26FBA9765A12932A211 /* Pods-OVLocationTagger_Example-acknowledgements.plist */,
-				24D2A3B02FA5798E79D0FA531B5005D1 /* Pods-OVLocationTagger_Example-dummy.m */,
-				B1F881E523A51407A2F7917D0F9DBD41 /* Pods-OVLocationTagger_Example-frameworks.sh */,
-				075A2D4270290B255D8BC5834BD5314C /* Pods-OVLocationTagger_Example-resources.sh */,
-				C8DB55D3F9842931BEB7C4855CAF84E7 /* Pods-OVLocationTagger_Example-umbrella.h */,
-				160905711CF9EE8F4ED60E6B8B86CAD8 /* Pods-OVLocationTagger_Example.debug.xcconfig */,
-				3444C768E925F4834FF6EEBB413633F1 /* Pods-OVLocationTagger_Example.release.xcconfig */,
+				F1937E58EBC4DBA9B6FF81714C78A993 /* Info.plist */,
+				24931DB655D6A5D521981281535465C8 /* Pods-OVLocationTagger_Example.modulemap */,
+				095B863712B4C513A453F9C682AF1F0A /* Pods-OVLocationTagger_Example-acknowledgements.markdown */,
+				5DEDEC998967023ABB2B0CF8570542BC /* Pods-OVLocationTagger_Example-acknowledgements.plist */,
+				184530CDD8B486661543284345522B25 /* Pods-OVLocationTagger_Example-dummy.m */,
+				24DCBA2EF603A24C22783CFF8FD6ADD5 /* Pods-OVLocationTagger_Example-frameworks.sh */,
+				13598202AC74C385730DE65DB4431F94 /* Pods-OVLocationTagger_Example-resources.sh */,
+				096ECCF4168C9551C517C3268024618F /* Pods-OVLocationTagger_Example-umbrella.h */,
+				4E85BDB8D913210A06D2FF032D18EDE0 /* Pods-OVLocationTagger_Example.debug.xcconfig */,
+				648590DA043E4CB164F71E85C7E9A78A /* Pods-OVLocationTagger_Example.release.xcconfig */,
 			);
 			name = "Pods-OVLocationTagger_Example";
 			path = "Target Support Files/Pods-OVLocationTagger_Example";
 			sourceTree = "<group>";
 		};
-		27DFAE95CF65D74F585AD07BE4DD225F /* Development Pods */ = {
+		492A3AA16A975566671EFD92117724D7 /* OVLocationTagger */ = {
 			isa = PBXGroup;
 			children = (
-				9ACE1992E90399430767BC38DE8A28EA /* OVLocationTagger */,
+				3267A5ABB05D04659A98A1FAD5379A64 /* OVLocationTagger.swift */,
+				FA912F25DB466172495E5EB3990E20C1 /* Pod */,
+				D4AF2F8F9DD3C3845DC5DE1ECC983A72 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = OVLocationTagger;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		6DDAF62E73F53FCC87ACBA1EE821AD5B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1CC31082F4C651D0A1D5E993447D3C1C /* Pods-OVLocationTagger_Example */,
+				22FF42687D91DCC73F9191E3F53874E0 /* Pods-OVLocationTagger_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -108,21 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				27DFAE95CF65D74F585AD07BE4DD225F /* Development Pods */,
+				CF4DF28E065813AC1BA186D3741B8CF1 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				BA39ECB595A4C020DC742EF74B3C6066 /* Products */,
 				6DDAF62E73F53FCC87ACBA1EE821AD5B /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9ACE1992E90399430767BC38DE8A28EA /* OVLocationTagger */ = {
-			isa = PBXGroup;
-			children = (
-				9962EE829205A52D6B2C3C99B0E0A05E /* OVLocationTagger.swift */,
-				FB7B131B5364E050290A11D91A64C454 /* Support Files */,
-			);
-			name = OVLocationTagger;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		BA39ECB595A4C020DC742EF74B3C6066 /* Products */ = {
@@ -142,6 +138,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CF4DF28E065813AC1BA186D3741B8CF1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				492A3AA16A975566671EFD92117724D7 /* OVLocationTagger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,18 +154,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FB7B131B5364E050290A11D91A64C454 /* Support Files */ = {
+		D4AF2F8F9DD3C3845DC5DE1ECC983A72 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7FD511B21B5EDC64692821080A8B982C /* Info.plist */,
-				6B2A24A5D17B1BDC6D81754246188C05 /* OVLocationTagger.modulemap */,
-				069B877796AA29B7500A70612EFD753A /* OVLocationTagger.xcconfig */,
-				17AEB3A1E109795D1F10B0D07174EB39 /* OVLocationTagger-dummy.m */,
-				564B51851266B1D74D6A00BF900521EF /* OVLocationTagger-prefix.pch */,
-				EB740E4FF51CD7FF2AF8B3DDF8D3E202 /* OVLocationTagger-umbrella.h */,
+				61CFAFE61B526963DBBF497AFC5ACCF4 /* Info.plist */,
+				EFFC6790E0547F427AD7473A0EAE46B7 /* OVLocationTagger.modulemap */,
+				2032E894A632E8EB9906737139E29AAA /* OVLocationTagger.xcconfig */,
+				A6C5C99386E6FE69E5C35737200A8327 /* OVLocationTagger-dummy.m */,
+				CAE2207660D62471C1AE6EC7EC228364 /* OVLocationTagger-prefix.pch */,
+				BA15B44A39C1EE8B1F75C6802DB9DE27 /* OVLocationTagger-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/OVLocationTagger";
+			sourceTree = "<group>";
+		};
+		FA912F25DB466172495E5EB3990E20C1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9EAA79584A51FAB0D15F5636E67DB8F7 /* LICENSE */,
+				4BFAC2A4242DAFFBC420787199375757 /* OVLocationTagger.podspec */,
+				5E072DA5B4B4D44600A57556B1D676F5 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +241,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -278,132 +292,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1A22FDFEEB9C7A3B7DBD6AADD5D49530 /* Debug */ = {
+		0CF8BA28ABFB80B745AFF5B30E206FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 160905711CF9EE8F4ED60E6B8B86CAD8 /* Pods-OVLocationTagger_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OVLocationTagger_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		82DBB349D41E2197A29E9C38B49E063E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3444C768E925F4834FF6EEBB413633F1 /* Pods-OVLocationTagger_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OVLocationTagger_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B8CEC342886038B5AFE0CE74908A6833 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 069B877796AA29B7500A70612EFD753A /* OVLocationTagger.xcconfig */;
+			baseConfigurationReference = 2032E894A632E8EB9906737139E29AAA /* OVLocationTagger.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -420,38 +311,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/OVLocationTagger/OVLocationTagger.modulemap";
-				PRODUCT_NAME = OVLocationTagger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C62DFC733DDC5FC2945701473D898B54 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 069B877796AA29B7500A70612EFD753A /* OVLocationTagger.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OVLocationTagger/OVLocationTagger-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OVLocationTagger/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OVLocationTagger/OVLocationTagger.modulemap";
+				PRODUCT_MODULE_NAME = OVLocationTagger;
 				PRODUCT_NAME = OVLocationTagger;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -464,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -474,10 +334,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -485,6 +347,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -493,6 +356,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -517,12 +381,172 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		687B65DDD27CC239B8CF69D7EE460FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E85BDB8D913210A06D2FF032D18EDE0 /* Pods-OVLocationTagger_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		994FEA41E293E9655EB9E8E3A672ABB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2032E894A632E8EB9906737139E29AAA /* OVLocationTagger.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OVLocationTagger/OVLocationTagger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OVLocationTagger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OVLocationTagger/OVLocationTagger.modulemap";
+				PRODUCT_MODULE_NAME = OVLocationTagger;
+				PRODUCT_NAME = OVLocationTagger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1B8D4C5407D1B8CB087EFBCE354B8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648590DA043E4CB164F71E85C7E9A78A /* Pods-OVLocationTagger_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OVLocationTagger_Example/Pods-OVLocationTagger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -530,8 +554,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
-				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -539,8 +563,8 @@
 		3EF0C5B9D91A0EA515C0A4B266B5116C /* Build configuration list for PBXNativeTarget "Pods-OVLocationTagger_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A22FDFEEB9C7A3B7DBD6AADD5D49530 /* Debug */,
-				82DBB349D41E2197A29E9C38B49E063E /* Release */,
+				687B65DDD27CC239B8CF69D7EE460FA9 /* Debug */,
+				F1B8D4C5407D1B8CB087EFBCE354B8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -548,8 +572,8 @@
 		9D92E7D07D739BB189AD1C159CA92CA5 /* Build configuration list for PBXNativeTarget "OVLocationTagger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C62DFC733DDC5FC2945701473D898B54 /* Debug */,
-				B8CEC342886038B5AFE0CE74908A6833 /* Release */,
+				0CF8BA28ABFB80B745AFF5B30E206FCA /* Debug */,
+				994FEA41E293E9655EB9E8E3A672ABB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

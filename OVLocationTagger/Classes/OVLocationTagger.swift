@@ -28,7 +28,7 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     
     //MARK: Public
     @objc public func register(withCompletion completion: @escaping OVLocationTaggerCompletion){
-        NSLog("[OVLocationTagger] Registered (1.3.4)")
+        NSLog("[OVLocationTagger] Registered (1.3.5)")
         self.completion = completion
         if CLLocationManager.locationServicesEnabled() {
             if authType == .authorizedAlways {

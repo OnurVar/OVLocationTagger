@@ -21,10 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Register Location Tagger
-        OVLocationTagger.sharedInstance.desiredAccuracy = kCLLocationAccuracyBest
-        OVLocationTagger.sharedInstance.authType = .authorizedAlways
-        OVLocationTagger.sharedInstance.timerInterval = 1.0
-        OVLocationTagger.sharedInstance.register { (location) in
+        OVLocationTagger.shared.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        OVLocationTagger.shared.timerInterval = 2.0
+        OVLocationTagger.shared.register(withBackgroundAccess: true) { (location) in
             if let location = location {
                 let stringTest = String.init(format: "%f - %f", (location.coordinate.latitude), (location.coordinate.longitude))
                 print(stringTest)

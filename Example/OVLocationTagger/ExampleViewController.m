@@ -13,20 +13,11 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [OVLocationTagger sharedInstance].desiredAccuracy = kCLLocationAccuracyBest;
-    [OVLocationTagger sharedInstance].authType = kCLAuthorizationStatusAuthorizedAlways;
-    [[OVLocationTagger sharedInstance] setTimerInterval:3.0];
-    [[OVLocationTagger sharedInstance] registerWithCompletion:^(CLLocation * location) {
-        
+    [OVLocationTagger shared].desiredAccuracy = kCLLocationAccuracyBest;
+    [[OVLocationTagger shared] setTimerInterval:3.0];
+    [[OVLocationTagger shared] registerWithBackgroundAccess:true withCompletion:^(CLLocation * location) {
+ 
     }];
-    
-//    OVLocationTagger.sharedInstance.desiredAccuracy = kCLLocationAccuracyBest
-//    OVLocationTagger.sharedInstance.authType = .authorizedAlways
-//    OVLocationTagger.sharedInstance.setTimerInterval(3.0)
-//    OVLocationTagger.sharedInstance.register { (location) in
-//        let stringTest = String.init(format: "%f - %f", (location?.coordinate.latitude)!, (location?.coordinate.longitude)!)
-//        print(stringTest)
-//    }
 }
 
 @end

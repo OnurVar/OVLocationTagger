@@ -23,15 +23,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnStopTapped(_ sender: Any) {
-        OVLocationTagger.sharedInstance.stopTagger()
+        OVLocationTagger.shared.stopTagger()
     }
     
     @IBAction func btnStartTapped(_ sender: Any) {
-        OVLocationTagger.sharedInstance.startTagger()
+        OVLocationTagger.shared.startTagger()
     }
     
     @IBAction func btnTriggerTapped(_ sender: Any) {
-        OVLocationTagger.sharedInstance.triggerTagger()
+        OVLocationTagger.shared.triggerTagger()
     }
     
     

@@ -23,13 +23,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Register Location Tagger
         OVLocationTagger.shared.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         OVLocationTagger.shared.timerInterval = 2.0
-        OVLocationTagger.shared.register(withBackgroundAccess: true) { (location) in
+        OVLocationTagger.shared.requestPermission(withBackgroundAccess: true)
+        OVLocationTagger.shared.setLocationCompletion { (location) in
             if let location = location {
                 let stringTest = String.init(format: "%f - %f", (location.coordinate.latitude), (location.coordinate.longitude))
                 print(stringTest)
             }
         }
         
+        OVLocationTagger.shared.setAuthorizationStatusCompletion { (status) in
+            
+        }
+        
+        OVLocationTagger.shared.setSignalStrengthCompletion { (signal) in
+            
+        }
         return true
     }
 

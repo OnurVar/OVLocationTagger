@@ -13,11 +13,11 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [OVLocationTagger shared].desiredAccuracy = kCLLocationAccuracyBest;
-    [[OVLocationTagger shared] setTimerInterval:3.0];
-    [[OVLocationTagger shared] registerWithBackgroundAccess:true withCompletion:^(CLLocation * location) {
- 
-    }];
+//    [OVLocationTagger shared].desiredAccuracy = kCLLocationAccuracyBest;
+//    [[OVLocationTagger shared] setTimerInterval:3.0];
+//    [[OVLocationTagger shared] registerWithBackgroundAccess:true withCompletion:^(CLLocation * location) {
+// 
+//    }];
 }
 
 @end

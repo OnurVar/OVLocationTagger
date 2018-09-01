@@ -8,7 +8,16 @@
 
 import CoreLocation
 
-public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
+@objc public enum OVSignalStrength: Int {
+    case NoSignal
+    case Weak
+    case Average
+    case Strong
+}
+
+public typealias OVLocationTaggerLocationCompletion = (_ location: CLLocation?) -> Void
+public typealias OVLocationTaggerAuthorizationStatusCompletion = (_ status: CLAuthorizationStatus) -> Void
+public typealias OVLocationTaggerSignalStrengthCompletion = (_ strength: OVSignalStrength) -> Void
 @objc public class OVLocationTagger: NSObject {
     
     
@@ -20,7 +29,9 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     @objc public var timerInterval          = Double(15.0) //Set 0 or negative to receive updates when CLLocationManager updates
     
     //Private's
-    fileprivate var completion:         OVLocationTaggerCompletion!
+    fileprivate var locationCompletion:                 OVLocationTaggerLocationCompletion?
+    fileprivate var locationAuthorizationCompletion:    OVLocationTaggerAuthorizationStatusCompletion?
+    fileprivate var locationSignalStrengthCompletion:   OVLocationTaggerSignalStrengthCompletion?
     fileprivate var timerTagger:        Timer!
     fileprivate var lastKnownLocation:  CLLocation?{
         didSet{
@@ -31,22 +42,32 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
     }
     
     
-    //MARK: Public
-    @objc public func register(withBackgroundAccess backgroundAccess: Bool, withCompletion aCompletion: @escaping OVLocationTaggerCompletion){
-        NSLog("[OVLocationTagger] Registered (1.3.7)")
-        self.completion = aCompletion
+    //MARK: Public Methods
+    
+    @objc public override init() {
+        super.init()
+        NSLog("[OVLocationTagger] Initialized (1.3.8)")
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = desiredAccuracy
+    }
+    
+    @objc public func setLocationCompletion(aCompletion: @escaping OVLocationTaggerLocationCompletion){
+        NSLog("[OVLocationTagger] setLocation")
+        self.locationCompletion = aCompletion
         
-        //Request Permission
-        backgroundAccess ? locationManager.requestAlwaysAuthorization() : locationManager.requestWhenInUseAuthorization()
-        
-        //If services enabled, se
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = desiredAccuracy
-        }
         
         checkStatus()
         
+    }
+    
+    @objc public func setAuthorizationStatusCompletion(aCompletion: @escaping OVLocationTaggerAuthorizationStatusCompletion){
+        NSLog("[OVLocationTagger] setAuthorizationStatusCompletion")
+        self.locationAuthorizationCompletion = aCompletion
+    }
+    
+    @objc public func setSignalStrengthCompletion(aCompletion: @escaping OVLocationTaggerSignalStrengthCompletion){
+        NSLog("[OVLocationTagger] setSignalStrengthCompletion")
+        self.locationSignalStrengthCompletion = aCompletion
     }
     
     @objc public func startTagger(){
@@ -95,10 +116,26 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         notifyCompletion()
     }
 
+    @objc public func requestPermission(withBackgroundAccess backgroundAccess: Bool){
+        
+        //Request Permission
+        backgroundAccess ? locationManager.requestAlwaysAuthorization() : locationManager.requestWhenInUseAuthorization()
+        
+    }
+    
+    
     
     //MARK: Private
     fileprivate func notifyCompletion(){
-        completion(lastKnownLocation)
+        
+        if let locationCompletion = locationCompletion {
+            locationCompletion(lastKnownLocation)
+        }
+        
+        if let locationSignalStrengthCompletion = locationSignalStrengthCompletion {
+            locationSignalStrengthCompletion(getSignalStrength(location: lastKnownLocation))
+        }
+        
     }
     
     fileprivate func checkStatus(){
@@ -108,6 +145,20 @@ public typealias OVLocationTaggerCompletion = (_ location: CLLocation?) -> Void
         }
     }
     
+    private func getSignalStrength(location: CLLocation?) -> OVSignalStrength {
+        if let location = location {
+            if (location.horizontalAccuracy < 0){
+                return OVSignalStrength.NoSignal
+            }else if (location.horizontalAccuracy > 163){
+                return OVSignalStrength.Weak
+            }else if (location.horizontalAccuracy > 48){
+                return OVSignalStrength.Average
+            }else{
+                return OVSignalStrength.Strong
+            }
+        }
+        return OVSignalStrength.NoSignal
+    }
     
     //MARK: Trigger
     @objc fileprivate func didTriggerTimer(_ timer: Timer){
@@ -127,6 +178,12 @@ extension OVLocationTagger : CLLocationManagerDelegate {
     }
     
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+        //Notify observer
+        if let locationAuthorizationStatusCompletion = locationAuthorizationCompletion {
+            locationAuthorizationStatusCompletion(status)
+        }
+        
         checkStatus()
     }
 }

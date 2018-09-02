@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		02B6389D0E318911E6EB1C8AD8B855E8 /* OVLocationTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267A5ABB05D04659A98A1FAD5379A64 /* OVLocationTagger.swift */; };
 		40B0B8F1D578D5B6C63517C1B37141D0 /* OVLocationTagger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA15B44A39C1EE8B1F75C6802DB9DE27 /* OVLocationTagger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6216C325213C184D00450A63 /* OVLocationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216C324213C184D00450A63 /* OVLocationConfiguration.swift */; };
+		6216C327213C1B7B00450A63 /* OVLocationTypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6216C326213C1B7B00450A63 /* OVLocationTypeAlias.swift */; };
 		9BC69A2BD9C9B3CBB88DBA01B0C0D85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DD291EFDE5EAD32F2C55DBDFE26D6B5A /* OVLocationTagger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5C99386E6FE69E5C35737200A8327 /* OVLocationTagger-dummy.m */; };
 		E6397540AB2FC0E02C1645BE9F809508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -35,18 +37,20 @@
 		24931DB655D6A5D521981281535465C8 /* Pods-OVLocationTagger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OVLocationTagger_Example.modulemap"; sourceTree = "<group>"; };
 		24DCBA2EF603A24C22783CFF8FD6ADD5 /* Pods-OVLocationTagger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OVLocationTagger_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3267A5ABB05D04659A98A1FAD5379A64 /* OVLocationTagger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OVLocationTagger.swift; path = OVLocationTagger/Classes/OVLocationTagger.swift; sourceTree = "<group>"; };
-		4BFAC2A4242DAFFBC420787199375757 /* OVLocationTagger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = OVLocationTagger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4BFAC2A4242DAFFBC420787199375757 /* OVLocationTagger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = OVLocationTagger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4E85BDB8D913210A06D2FF032D18EDE0 /* Pods-OVLocationTagger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OVLocationTagger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5DEDEC998967023ABB2B0CF8570542BC /* Pods-OVLocationTagger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OVLocationTagger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5E072DA5B4B4D44600A57556B1D676F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5E072DA5B4B4D44600A57556B1D676F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		61CFAFE61B526963DBBF497AFC5ACCF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6216C324213C184D00450A63 /* OVLocationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OVLocationConfiguration.swift; path = OVLocationTagger/Classes/OVLocationConfiguration.swift; sourceTree = "<group>"; };
+		6216C326213C1B7B00450A63 /* OVLocationTypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OVLocationTypeAlias.swift; path = OVLocationTagger/Classes/OVLocationTypeAlias.swift; sourceTree = "<group>"; };
 		648590DA043E4CB164F71E85C7E9A78A /* Pods-OVLocationTagger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OVLocationTagger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6BA02768A0ABE15BDCB1723EECC8CF94 /* OVLocationTagger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OVLocationTagger.framework; path = OVLocationTagger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EAA79584A51FAB0D15F5636E67DB8F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6BA02768A0ABE15BDCB1723EECC8CF94 /* OVLocationTagger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OVLocationTagger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EAA79584A51FAB0D15F5636E67DB8F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A6C5C99386E6FE69E5C35737200A8327 /* OVLocationTagger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OVLocationTagger-dummy.m"; sourceTree = "<group>"; };
-		A7BCB910DA5CFDE236CA3ECFF3E89C90 /* Pods_OVLocationTagger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OVLocationTagger_Example.framework; path = "Pods-OVLocationTagger_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BCB910DA5CFDE236CA3ECFF3E89C90 /* Pods_OVLocationTagger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OVLocationTagger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA15B44A39C1EE8B1F75C6802DB9DE27 /* OVLocationTagger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger-umbrella.h"; sourceTree = "<group>"; };
 		CAE2207660D62471C1AE6EC7EC228364 /* OVLocationTagger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OVLocationTagger-prefix.pch"; sourceTree = "<group>"; };
 		EFFC6790E0547F427AD7473A0EAE46B7 /* OVLocationTagger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OVLocationTagger.modulemap; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				3267A5ABB05D04659A98A1FAD5379A64 /* OVLocationTagger.swift */,
+				6216C326213C1B7B00450A63 /* OVLocationTypeAlias.swift */,
+				6216C324213C184D00450A63 /* OVLocationConfiguration.swift */,
 				FA912F25DB466172495E5EB3990E20C1 /* Pod */,
 				D4AF2F8F9DD3C3845DC5DE1ECC983A72 /* Support Files */,
 			);
@@ -276,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD291EFDE5EAD32F2C55DBDFE26D6B5A /* OVLocationTagger-dummy.m in Sources */,
+				6216C325213C184D00450A63 /* OVLocationConfiguration.swift in Sources */,
+				6216C327213C1B7B00450A63 /* OVLocationTypeAlias.swift in Sources */,
 				02B6389D0E318911E6EB1C8AD8B855E8 /* OVLocationTagger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

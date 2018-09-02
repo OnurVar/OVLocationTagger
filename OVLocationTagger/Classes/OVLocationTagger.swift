@@ -8,25 +8,13 @@
 
 import CoreLocation
 
-@objc public enum OVSignalStrength: Int {
-    case NoSignal
-    case Weak
-    case Average
-    case Strong
-}
 
-public typealias OVLocationTaggerLocationCompletion = (_ location: CLLocation?) -> Void
-public typealias OVLocationTaggerAuthorizationStatusCompletion = (_ status: CLAuthorizationStatus) -> Void
-public typealias OVLocationTaggerSignalStrengthCompletion = (_ strength: OVSignalStrength) -> Void
 @objc public class OVLocationTagger: NSObject {
     
-    
     //Public's
-    @objc public static let shared  = OVLocationTagger()
+    @objc public static let shared          = OVLocationTagger()
     @objc public let locationManager        = CLLocationManager()
-    @objc public var desiredAccuracy        = kCLLocationAccuracyNearestTenMeters
     @objc public var isLocationEnabled      = false
-    @objc public var timerInterval          = Double(15.0) //Set 0 or negative to receive updates when CLLocationManager updates
     
     //Private's
     fileprivate var locationCompletion:                 OVLocationTaggerLocationCompletion?
@@ -35,8 +23,14 @@ public typealias OVLocationTaggerSignalStrengthCompletion = (_ strength: OVSigna
     fileprivate var timerTagger:        Timer!
     fileprivate var lastKnownLocation:  CLLocation?{
         didSet{
-            if self.timerInterval <= 0 {
+            if OVLocationConfiguration.shared.timerInterval <= 0 {
                 self.notifyCompletion()
+            }
+        }
+        willSet{
+            if let oldLocation = lastKnownLocation, let newLocation = newValue {
+                let distanceMeasured = newLocation.distance(from: oldLocation)
+                NSLog("[OVLocationTagger] Distance measured %f",distanceMeasured)
             }
         }
     }
@@ -48,16 +42,14 @@ public typealias OVLocationTaggerSignalStrengthCompletion = (_ strength: OVSigna
         super.init()
         NSLog("[OVLocationTagger] Initialized (1.3.8)")
         locationManager.delegate = self
-        locationManager.desiredAccuracy = desiredAccuracy
+        locationManager.desiredAccuracy = OVLocationConfiguration.shared.desiredAccuracy
+        locationManager.distanceFilter  = OVLocationConfiguration.shared.distanceFilter
     }
     
     @objc public func setLocationCompletion(aCompletion: @escaping OVLocationTaggerLocationCompletion){
-        NSLog("[OVLocationTagger] setLocation")
+        NSLog("[OVLocationTagger] setLocationCompletion")
         self.locationCompletion = aCompletion
-        
-        
         checkStatus()
-        
     }
     
     @objc public func setAuthorizationStatusCompletion(aCompletion: @escaping OVLocationTaggerAuthorizationStatusCompletion){
@@ -83,9 +75,9 @@ public typealias OVLocationTaggerSignalStrengthCompletion = (_ strength: OVSigna
             if CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||  CLLocationManager.authorizationStatus() == .authorizedAlways {
                 
                 //Check if timeInterval is set > 0
-                if self.timerInterval > 0 {
+                if OVLocationConfiguration.shared.timerInterval > 0 {
                     //Start the timer if we have location service enabled
-                    self.timerTagger = Timer.scheduledTimer(timeInterval: self.timerInterval, target: self, selector: #selector(self.didTriggerTimer(_:)), userInfo: nil, repeats: true)
+                    self.timerTagger = Timer.scheduledTimer(timeInterval: OVLocationConfiguration.shared.timerInterval, target: self, selector: #selector(self.didTriggerTimer(_:)), userInfo: nil, repeats: true)
                     
                 }
                 
@@ -116,10 +108,22 @@ public typealias OVLocationTaggerSignalStrengthCompletion = (_ strength: OVSigna
         notifyCompletion()
     }
 
-    @objc public func requestPermission(withBackgroundAccess backgroundAccess: Bool){
+    @objc public func requestPermission(){
         
-        //Request Permission
-        backgroundAccess ? locationManager.requestAlwaysAuthorization() : locationManager.requestWhenInUseAuthorization()
+        switch OVLocationConfiguration.shared.requestType {
+        case .WhenInUse:
+            locationManager.requestWhenInUseAuthorization()
+            break
+        case .Background:
+            locationManager.requestAlwaysAuthorization()
+            break
+        case .BackgroundAndSuspended:
+            locationManager.requestAlwaysAuthorization()
+            if #available(iOS 9.0, *) {
+                locationManager.allowsBackgroundLocationUpdates = true
+            }
+            break
+        }
         
     }
     
@@ -171,8 +175,8 @@ public typealias OVLocationTaggerSignalStrengthCompletion = (_ strength: OVSigna
 extension OVLocationTagger : CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
        
-        if let last = locations.last {
-            self.lastKnownLocation = last
+        if let first = locations.first {
+            self.lastKnownLocation = first
         }
         
     }

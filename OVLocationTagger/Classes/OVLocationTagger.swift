@@ -40,7 +40,7 @@ import CoreLocation
     
     @objc public override init() {
         super.init()
-        NSLog("[OVLocationTagger] Initialized (1.3.8)")
+        NSLog("[OVLocationTagger] Initialized (1.3.9)")
         locationManager.delegate = self
         locationManager.desiredAccuracy = OVLocationConfiguration.shared.desiredAccuracy
         locationManager.distanceFilter  = OVLocationConfiguration.shared.distanceFilter
